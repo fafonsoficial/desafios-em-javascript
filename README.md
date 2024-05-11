@@ -1,2 +1,2 @@
 # desafios-em-javascript
- Neste repositório consta os meus primeiro passos em Javascript
+ Neste repositório consta os meus primeiro passos em Javascript.
