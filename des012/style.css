@@ -2,14 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 body {
-    font-size: "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
     text-align: center;
     background-color: black;
 }
 
 h1 {
     color: white;
-    font-size: "Quicksand", sans-serif; 
+    font-size: "Quicksand", sans-serif;
+    font-size: 100px; 
+
 }
 
 p {
