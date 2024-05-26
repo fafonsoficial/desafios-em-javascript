@@ -22,8 +22,24 @@
     </footer>
 
     <script>
-        alert('Seja muito bem-vindo')
-        
+        confirm('Podemos começar com o nosso inquerito?')
+        var nome = prompt('Agradeceriamos se nos fornecesse o seu nome para melhor ser tratado.')
+        confirm(`Será que nos permite colher mais informações senhor/a ${nome}`)
+        var idade = prompt(`Forneça-nos a sua idade senhor/a ${nome}`)
+        confirm('Com base a isso vamos fazer algumas contas para nos confirmar que não é um ROBO')
+
+        var num1 = Number.parseInt(prompt('Digite um número'))
+        var num2 = Number.parseFloat(prompt('Diginte o outro número'))
+        var resultado = num1 + num2
+
+        resultado.toFixed(2)
+
+        alert(`Senhor/a ${nome} digitou os seguintes números ${num1} e támbém o ${num2} e a soma dos dois números é igual a ${resultado}`)
+
+        alert('Para darmos continuidade ao nosso inquêrito temos mais algumas configurações, Deseja continuar?')
+
+        alert(`O seu nome em maiúscula será ${nome.toUpperCase()} e o seu nome em menusculas será ${nome.toLowerCase()} e ela tem ${nome.length} letras`)
+       
     </script>
 </body>
 </html>
