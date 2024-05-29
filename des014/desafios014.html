@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+</head>
+<body>
+    
+    <script>
+        var nome = prompt('Digite o seu nome')
+        document.writeln(`Seja muito bem vimdo ${nome}`)
+        var salario = prompt('Digite quando é o seu salário')
+        document.write(`${nome} o seu salário é de ${salario}`)
+        salario.toFixed(2).replace('.',',')
+        salario.toLocaleString('pt-BR', {style: 'currency',  currency: 'EUR'})
+
+
+    </script>
+</body>
+</html>
