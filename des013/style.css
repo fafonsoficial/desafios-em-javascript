@@ -10,3 +10,59 @@
     --font1: "Sriracha", cursive;
     --font2: "Poppins", sans-serif;
 }
+
+*{
+    background-image: linear-gradient(to left, rgba(255, 0, 162, 0.793), rgba(0, 0, 255, 0.421));
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: var(--font2);
+    font-size: 5.5em;
+    font-weight: 900;
+    text-shadow: 1px 3px 3px rgb(0, 0, 0);
+    
+}
+
+p {
+    color: white;
+    font-family: var(--font2);
+    text-align: center;
+}
+
+.img{
+    text-align: center;
+}
+
+.img a {
+    color: white;
+    font-family: var(--font2);
+    text-decoration: none;
+}
+
+h2 {
+    color: white;
+    font-family: var(--font1);
+    text-align: center;
+    font-size: 3em;
+}
+
+button a {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font2);
+    text-decoration: none;
+    color: white;
+}
+
+footer a {
+    color: white;
+   text-decoration: none;
+   cursor: pointer;
+   transition: 5s;
+}
+
+footer a:hover{
+    color: rgba(51, 0, 255, 0.544);
+}
