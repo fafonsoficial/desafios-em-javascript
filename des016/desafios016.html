@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+</head>
+<body>
+
+    <script>
+        alert('Ola, Mundo')
+        alert('Seja bem vindo ao JavaScript')
+        confirm('Vamos treinar mais um pouco sobre JavaScript')
+
+        var nomepai = prompt('Digite o nome do seu pai')
+        var nomemae = prompt('Digite o nome de sua mão')
+        var nome = prompt('Digite o seu nome')
+
+        var anonascimento = prompt('Digite o ano em que você nasceu')
+        var anoatual = prompt('Digite o ano atual')
+
+        var idade = anoatual - anonascimento
+
+        document.writeln(`Olá ${nome}, seja muito bem-vindo, o nome do seu pai é ${nomepai} e o nome da sua mãe é ${nomemae} e tu estas com ${idade} anos de idade`)
+
+        document.writeln(`${nome}, posso apresentar o seu nome de duas formas, o seu nome em maiúsculas é ${nome.toUpperCase()} e o seu em manusculas é ${nome.toLowerCase()}`)
+    </script>
+    
+</body>
+</html>
