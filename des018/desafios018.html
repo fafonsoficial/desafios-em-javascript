@@ -9,7 +9,8 @@
     
 
     <script>
-        alert('Vamos treinar sobre Operadores')
+        alert('BEM-VINDO à ária de aluno do Instituto Politécnico de Bragança')
+
 
         var NMecanografico = prompt('Número Mecanografico: ')
         var Nomealuno = prompt('Nome de Estudante: ')
@@ -17,13 +18,13 @@
         var AnoLectivo = prompt('Ano Lectivo')
         var Disciplina = prompt('Disciplina: ')
 
-        var NotaPromeiraAvaliação = Number.parseFloat(prompt('Nota da primeira avalização: '))
-        var NotaSegundaAvaliação = Number.parseFloat(prompt('Nota da segunda avaliação'))
-        var NotaTerceiraAvaliação = Number.parseFloat(prompt('Nota da teerceira avaliação'))
+        var NotaPromeiraAvaliação = Number(prompt('Nota da primeira avalização: '))
+        var NotaSegundaAvaliação = Number(prompt('Nota da segunda avaliação'))
+        var NotaTerceiraAvaliação = Number(prompt('Nota da teerceira avaliação'))
  
-        var NotaPrimeiraProva = Number.parseFloat(prompt('Nota da Porva'))
-        var NotaSegundaProva = Number.parseFloat(prompt('Nota da segunda prova'))
-        var NotaTerceiraProva = Number.parseFloat(prompt('Nota da Terceira Prova'))
+        var NotaPrimeiraProva = Number(prompt('Nota da Porva'))
+        var NotaSegundaProva = Number(prompt('Nota da segunda prova'))
+        var NotaTerceiraProva = Number(prompt('Nota da Terceira Prova'))
 
         var ResultadoAvalaições = (NotaPromeiraAvaliação + NotaSegundaAvaliação + NotaTerceiraAvaliação) / 3
 
@@ -34,9 +35,9 @@
         var ResultadoFinal2 = ResultadoFinal > 7.5? 'Aprovado' : 'Reprovado'
 
 
-        document.write(`O estudante nº ${NMecanografico}, com o nome de ${Nomealuno},  estudante do ${Classe}ª ano, frequentou o ano letivo ${AnoLectivo} em nossa instituição. <br/> Teve como rendimento academigos na disciplina de ${Disciplina} as segintes notas: <br/> ${NotaPromeiraAvaliação} na primeira avaliação <br/> ${NotaSegundaAvaliação} na segunda avaliação <br/> ${NotaTerceiraAvaliação} na terceira avaliação <br/> <h3> E teve os seguintes rendimentos nas provas</h3> <br/> ${NotaPrimeiraProva} na primeira prova <br/> ${NotaSegundaProva} na segunda prova <br/> ${NotaTerceiraProva} na terceira prova <br/>`)
+        document.write(`O estudante nº ${NMecanografico}, com o nome de ${Nomealuno},  estudante do ${Classe}º ano, frequentou o ano letivo ${AnoLectivo} em nossa instituição. <br/> Obteve como rendimento académicos na disciplina de ${Disciplina} e obteve as seguintes notas: <br/> ${NotaPromeiraAvaliação} valores na primeira avaliação, <br/> ${NotaSegundaAvaliação} valores na segunda avaliação, <br/> ${NotaTerceiraAvaliação} valores na terceira avaliação. <br/> <h3> E teve os seguintes rendimentos nas provas finais </h3> <br/> ${NotaPrimeiraProva} valores na primeira prova <br/> ${NotaSegundaProva} valores na segunda prova <br/> ${NotaTerceiraProva} valores na terceira prova.`)
         
-        document.write(`Com base nisso confirma-se que obteve como média final ${ResultadoFinal} e esse aluno está ${ResultadoFinal2}`)
+        document.write(`Com base nisso, confirma-se que o aluno ${Nomealuno} obteve como média final ${ResultadoFinal} e esse aluno está ${ResultadoFinal2}`)
     </script>
 </body>
 </html> 
