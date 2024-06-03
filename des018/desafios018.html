@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt_PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+</head>
+<body>
+    
+
+    <script>
+        alert('Vamos treinar sobre Operadores')
+
+        var NMecanografico = prompt('Número Mecanografico: ')
+        var Nomealuno = prompt('Nome de Estudante: ')
+        var Classe = prompt('Classe')
+        var AnoLectivo = prompt('Ano Lectivo')
+        var Disciplina = prompt('Disciplina: ')
+
+        var NotaPromeiraAvaliação = Number.parseFloat(prompt('Nota da primeira avalização: '))
+        var NotaSegundaAvaliação = Number.parseFloat(prompt('Nota da segunda avaliação'))
+        var NotaTerceiraAvaliação = Number.parseFloat(prompt('Nota da teerceira avaliação'))
+ 
+        var NotaPrimeiraProva = Number.parseFloat(prompt('Nota da Porva'))
+        var NotaSegundaProva = Number.parseFloat(prompt('Nota da segunda prova'))
+        var NotaTerceiraProva = Number.parseFloat(prompt('Nota da Terceira Prova'))
+
+        var ResultadoAvalaições = (NotaPromeiraAvaliação + NotaSegundaAvaliação + NotaTerceiraAvaliação) / 3
+
+        var ResultadoProvas = (NotaPrimeiraProva + NotaSegundaProva + NotaTerceiraProva) / 3 
+
+        var ResultadoFinal = (ResultadoAvalaições + ResultadoProvas) / 2
+
+        var ResultadoFinal2 = ResultadoFinal > 7.5? 'Aprovado' : 'Reprovado'
+
+
+        document.write(`O estudante nº ${NMecanografico}, com o nome de ${Nomealuno},  estudante do ${Classe}ª ano, frequentou o ano letivo ${AnoLectivo} em nossa instituição. <br/> Teve como rendimento academigos na disciplina de ${Disciplina} as segintes notas: <br/> ${NotaPromeiraAvaliação} na primeira avaliação <br/> ${NotaSegundaAvaliação} na segunda avaliação <br/> ${NotaTerceiraAvaliação} na terceira avaliação <br/> <h3> E teve os seguintes rendimentos nas provas</h3> <br/> ${NotaPrimeiraProva} na primeira prova <br/> ${NotaSegundaProva} na segunda prova <br/> ${NotaTerceiraProva} na terceira prova <br/>`)
+        
+        document.write(`Com base nisso confirma-se que obteve como média final ${ResultadoFinal} e esse aluno está ${ResultadoFinal2}`)
+    </script>
+</body>
+</html> 
