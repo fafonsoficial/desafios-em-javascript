@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinando JavaScript, html E css</title>
+    <style>
+        body {
+            background-color: white;
+            color: black
+        }
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .teste  {
+            font: normal 20pt Arial;
+            background: white;
+            color: black;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h1>Exercicios Sobre DOM</h1>
+
+    <p>Inicia aqui mais um capitulo sobre <strong>DOM</strong></p>
+    <p>Isso servira de prática para melhor fixar os conhecimentos estudados as aulas.</p>
+
+    <div id="teste">
+        Clique...
+    </div>
     
+
+    <script>
+       var a = document.getElementById('teste')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'Red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'Blue'
+        }
+
+    </script>
 </body>
 </html>
