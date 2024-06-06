@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+    <style>
+        #btn {
+            font: normal 16pt Arial;
+            background-color: rgb(50, 101, 15);
+            color: white;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+        }
+
+        #copy {
+            font: normal 16pt Arial;
+            background-color: rgb(50, 101, 15);
+            color: white;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treinando sobre eventos</h1>
+
+    <div id="btn" onclick="clicar()">
+        Enviar
+    </div>
+    <br>
+    <div id="copy" onmouseenter="entrar()" onmouseout="sair()">
+        Copiar
+    </div>
+
+    <script>
+        function clicar() {
+            var a = document.getElementById('btn')
+            a.innerText = 'Enviado'
+        }
+
+        function entrar() {
+            var b = document.getElementById('copy')
+            b.innerText = 'Copiado'
+        }
+
+        function sair() {
+            var b = document.getElementById('copy')
+            b.innerText = 'saiu'
+        }
+    </script>
+</body>
+</html>
