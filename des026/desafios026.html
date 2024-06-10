@@ -12,8 +12,32 @@
 
     Insira o ano em que estamos : <input type="number" name="anoatual" id="anoatual">
 
+    <input type="button" value="verificar" onclick="calcular()">
+
+    <div id="idade">
+
+    </div>
+
     <script>
-        
+        var anonascimento = document.querySelector('input#anonascimento')
+        var anoatual = document.querySelect('input#anoatual')
+
+        function calcular() {
+            var anonascimento = document.querySelect('input#anonascimento')
+            var anoatual = document.querySelector('input#anoatual') 
+            var val = Number(anonascimento.value)
+            var vel = Number(anoatual.value)
+            
+            idade = anoatual - anonascimento
+
+            idade.innerHTML += `Você está com ${idade} anos de idade`
+            if (idade > 30) {
+                idade.innerHTML += `<p>Você é maior de idade</p>`
+            }
+            
+            idade.innerHTML += `Você é menor de idade`
+            
+        }
     </script>
     
 </body>
