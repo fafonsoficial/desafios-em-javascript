@@ -1,4 +1,4 @@
-var nome = 'Francisco'
+var nome = 'Pedro'
 console.log(`Olá ${nome}`)
 if(nome != 'Francisco') {
     console.log('Você não é o Francisco')
