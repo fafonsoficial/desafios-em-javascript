@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+</head>
+<body>
+    
+
+    <script>
+        confirm('Vamos treinar sobre calculos?')
+
+        var valor1 = Number(prompt('Digite o primeiro número'))
+
+        var valor2 = Number(prompt('Digite o segundo número'))
+
+        var valor3 = Number(prompt('Digite o terceiro número'))
+
+        var resultadofinal = (valor1 + valor2 + valor3) / 3
+        resultadofinal.toFixed(2) // serve para contar quantas decimais depois da virgula
+
+       var res = resultadofinal >= 10? 'Aprovado' : 'Reprovado'
+
+        document.write(`O valor final entre ${valor1} e ${valor2} e ${valor3} é igual à ${resultadofinal} e nesse contexto tu estas ${res}`)
+    </script>
+</body>
+</html>
