@@ -15,6 +15,7 @@
         var NMecanografico = prompt('Número Mecanografico: ')
         var Nomealuno = prompt('Nome de Estudante: ')
         var Classe = prompt('Classe')
+        var curso = prompt('Curso')
         var AnoLectivo = prompt('Ano Lectivo')
         var Disciplina = prompt('Disciplina: ')
 
@@ -33,11 +34,10 @@
         var ResultadoFinal = (ResultadoAvalaições + ResultadoProvas) / 2
 
         var ResultadoFinal2 = ResultadoFinal > 7.5? 'Aprovado' : 'Reprovado'
+        ResultadoFinal2.toFixed(2)
         
-
-
-        document.write(`O estudante nº ${NMecanografico}, com o nome de ${Nomealuno},  estudante do ${Classe}º ano, frequentou o ano letivo ${AnoLectivo} em nossa instituição. <br/> Obteve como rendimento académicos na disciplina de ${Disciplina} e obteve as seguintes notas: <br/> ${NotaPromeiraAvaliação} valores na primeira avaliação, <br/> ${NotaSegundaAvaliação} valores na segunda avaliação, <br/> ${NotaTerceiraAvaliação} valores na terceira avaliação. <br/> <h3> E teve os seguintes rendimentos nas provas finais </h3> <br/> ${NotaPrimeiraProva} valores na primeira prova <br/> ${NotaSegundaProva} valores na segunda prova <br/> ${NotaTerceiraProva} valores na terceira prova.`)
-        
+        document.write(`O estudante nº ${NMecanografico}, com o nome de ${Nomealuno},  estudante do ${Classe}º ano do curso de ${curso}, frequentou o ano letivo ${AnoLectivo} em nossa instituição. <br/> Teve como rendimento académicos na disciplina de ${Disciplina} as seguintes notas: <br/> ${NotaPromeiraAvaliação} valores na primeira avaliação, <br/> ${NotaSegundaAvaliação} valores na segunda avaliação, <br/> ${NotaTerceiraAvaliação} valores na terceira avaliação. <br/> <h3> E teve os seguintes rendimentos nas provas finais </h3> <br/> ${NotaPrimeiraProva} valores na primeira prova <br/> ${NotaSegundaProva} valores na segunda prova <br/> ${NotaTerceiraProva} valores na terceira prova.`)
+        <br>
         document.write(`Com base nisso, confirma-se que o aluno ${Nomealuno} obteve como média final ${ResultadoFinal} e esse aluno está ${ResultadoFinal2}.`)
     </script>
 </body>
