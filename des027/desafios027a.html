@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert('Vamos fazer calculos sobre média')
+
+        let nota1 = parseFloat(prompt('Digite o primerio número'))
+        let nota2 = parseFloat(prompt('Digite o segundo número'))
+        let nota3 = parseFloat(prompt('Digite o terceiro número'))
+
+        let média = (nota1 + nota2 + nota3)/3
+        média.toFixed(2)
+
+        let média1 = média > 7.5? 'Aprovado':'Reprovado'
+
+        alert(`A média entre as três provas é de ${média} `)
+    </script>
+</body>
+</html>
