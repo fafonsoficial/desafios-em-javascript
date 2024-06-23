@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treinando Sobre DOM</h1>
+    <p>Aprendendo a usar o DOM</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magnam officia ipsam quis facilis libero esse consectetur velit laudantium ipsa culpa, repudiandae nesciunt quasi? Distinctio eaque facilis enim iusto alias?</p>
+    <div id="clicar">
+        Entrar
+    </div>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('Está escrito assim ' + p1.innerText)
+    </script>
+</body>
+</html>
