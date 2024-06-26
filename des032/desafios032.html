@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Javscript, HTML e CSS</title>
+    <style>
+        #acessar{
+            font: normal 20pt Arial;
+            background: rgba(0, 128, 0, 0.822);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treinando Sobre Eventos</h1>
+
+    <p>Para poderes ter mais acesso aos conteudos siga a página a baixo! </p>
+
+    <div id="acessar">
+        Entrar
+    </div>
+
+    <script>
+        var a = document.getElementById('acessar')
+        a.addEventListener('click', clicar) //a palavra clicar é a minha acão no faction
+        a.addEventListener('mouseenter', entrar) //a palavra entrar é a minha acão no faction
+        a.addEventListener('mouseout', sair) //a palavra sair é a minha acão no faction
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'Red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+
+    </script>
+    
+</body>
+</html>
