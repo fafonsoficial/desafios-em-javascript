@@ -10,7 +10,7 @@
 <body>
     <h1>CALCULADOREA DE MÉDIA DE ALUNO</h1>
     <p>
-        Esse aplicativo consite em saber se o estudante está aprovado ou reprovado. Para isso temos que tem as seguintes
+        Esse aplicativo consite em saber se o estudante está aprovado ou reprovado. Caso o aluno tiver uma média supeior ou igual a 7.5 estará aprovado, caso não tenha estará reprovado. Para isso temos que tem as seguintes
         notas:
     </p>
     <ul>
@@ -26,27 +26,27 @@
     <input type="number" name="primeira" id="primeira"> + 
     <input type="number" name="segunda" id="segunda"> +
     <input type="number" name="terceira" id="terceira">
-    <input type="button" value="Calcular" onclick="calcular()">
+    <input type="button" value="Somar" onclick="somar()">
     
-    <div id="saida">
+    <div id="res">
         <br> <strong>Saida do resultado final</strong>:
     </div>
 
     <script>
-        function calcular() {
-            let nota1 = document.getElementById('primeiro')
-            let nota2 = document.getElementById('segundo')
-            let nota3 = document.getElementById('terceiro')
-            let saida = document.getElementById('saida')
-            let a1 = Number(nota1.value)
-            let a2 = Number(nota2.value)
-            let a3 = Number(nota3.value)
+        function somar() {
+            var nota1 = document.getElementById('primeiro')
+            var nota2 = document.getElementById('segundo')
+            var nota3 = document.getElementById('terceiro')
+            var saida = document.getElementById('saida')
+            var n1 = Number(nota1.value)
+            var n2 = Number(nota2.value)
+            var n3 = Number(nota3.value)
 
-            let soma = (a1 + a2 + a3) / 3
-            //let soma2 = soma / 3
-            soma.toFixed(2)
+            var soma = n1 + n2 + n3
+            var soma2 = soma / 3
+            soma2.toFixed(2)
             
-            saida.innerHTML = ` A soma entre ${a1}, ${a2} e ${a3} da o total de ${soma} valores. `
+            res.innerHTML = ` O resultado final das somas das três notas é igual a ${soma} `
         }
 
     </script>
