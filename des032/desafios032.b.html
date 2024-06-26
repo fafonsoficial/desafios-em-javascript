@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Javascript, HTML e CSS</title>
+</head>
+
+<body>
+    <h1>Registar a sua viatura</h1>
+    <p>Faça aqui o cadastro da sua viatura</p>
+    Marca do carro <input type="text" name="marca" id="marca">
+    Matricula do carro <input type="text" name="matricula" id="matricula">
+    Número de portas <input type="number" name="porta" id="porta">
+    <input type="button" value="Registar" onclick="Registar()">
+
+    <div id="res">
+        Resultado
+    </div>
+
+    <script>
+        function Registar() {
+            let x = document.getElementById('marca')
+            let y = document.getElementById('matricula')
+            let z = document.getElementById('porta')
+            let res = document.getElementById('res')
+            let a = x
+            let b = y
+            let c = z
+            res.innerHTML = `O seu carro é da marca ${a}, e tem como matricula ${b} e tem ${c} portas`
+        }
+
+    </script>
+</body>
+
+</html>

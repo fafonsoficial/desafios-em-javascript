@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+</head>
+<body>
+    <h1>Calcular a sua idade</h1>
+    <p>Para melhor utilizar as caixas de texto,a primeira caixa digite o <strong>Ano atual</strong> e na segunda digite <strong>Ano de nascimento</strong></p>
+    <input type="number" name="anoatual" id="anoatual"> - 
+    <input type="number" name="anonascimento" id="anonascimento">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <div id="res">
+        Resultado
+    </div>
+
+    <script>
+        function subtrair() {
+            var a = document.getElementById('anoatual')
+            var b = document.getElementById('anonascimento')
+            var res = document.getElementById('res')
+
+            var n1 = Number(a.value)
+            var n2 = Number(b.value)
+
+            var s = n1 - n2
+            res.innerHTML = `Atualmente estás com ${s} anos de idade`
+        }
+    </script>
+    
+</body>
+</html>

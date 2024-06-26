@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Javascript, HTML e CSS</title>
+    <style>
+       
+        h5 {
+            font-size: 20px;
+        }
+        #enviar{
+            font: normal 14px Arial;
+            background: rgb(0, 169, 23);
+            color: white;
+            width: 90px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h5>Uma carta paar ao meu amor</h5>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur vitae qui soluta sunt. Quo, eum culpa. Laborum ipsum aspernatur odit distinctio hic harum praesentium, minima nostrum veniam, debitis vero. Odio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dicta repudiandae nulla esse aliquid excepturi quidem tempore pariatur! Dolorum iste esse nisi quibusdam enim nemo quae animi sapiente! Doloremque, voluptates!</p>
+
+    <p>Com os melhores cumprimentos</p>
+    <p>Francisco Afonso</p>
+
+    <div id="enviar">
+        Enviar Carta
+    </div>
+    
+    <script>
+        let x = document.getElementById('enviar')
+        x.addEventListener('click', Enviado)
+        x.addEventListener('mouseout', Enviar)
+
+        function Enviado() {
+            x.innerText = 'Enviado!'
+            x.style.background = 'Blue'
+        }
+
+        function Enviar() {
+            x.innerText = 'Enviar'
+            x.style.background = 'Red'
+        }
+    </script>
+</body>
+</html>
