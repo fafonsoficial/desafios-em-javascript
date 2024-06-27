@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS/title></title>
+</head>
+<body>
+    <h1>Treiando sobre os eventos DOM</h1>
+    <p> Nesse projeto vamos traballhar um pouco sobre os eventos que tem relação com o mouse!</p>
+
+    <div id="correio">
+        Bora Clicar
+    </div>
+
+    <script>
+        var x = document.getElementById('correio')
+        x.addEventListener('click', clicar)
+        x.addEventListener('mouseenter', entrar)
+        x.addEventListener('mouseout', sair)
+
+        function clicar() {
+            x.innerText = 'Clicou!'
+            x.style.background = 'Red'
+        }
+
+        function entrar() {
+            x.innerText = 'Entrou!'
+            x.style.background = 'Green'
+        }
+
+        function sair() {
+            x.innerText = 'Saiu'
+            x.style.background = 'orange'
+        }
+    </script>
+</body>
+</html>
