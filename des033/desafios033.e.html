@@ -29,8 +29,10 @@
             var pais = document.getElementById('valor1')
             var res = document.getElementById('res')
             var s = (pais.value)
+
             res.innerHTML = `<p> Você está morando em ${s}</p> `
-            if(pais == 'Angola') {
+            
+            if(pais === 'Angola') {
                 res.innerHTML += 'Você é Angolano'
             } else {
                 res.innerHTML += 'Você é Estrangeiro'
