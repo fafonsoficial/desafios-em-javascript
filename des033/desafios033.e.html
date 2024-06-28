@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,11 @@
         }
     </style>
 </head>
+
 <body>
     <h1>SISTEMA DE CONTROLO DA EMIGRAÇÃO PORTUGUÊSA</h1>
 
-    Insira o seu país de origem: <input type="text" name="país" id="país">
+    Insira o seu país de origem: <input type="text" name="país" id="valor1">
 
     <input type="button" value="Verificar" onclick="validar()">
 
@@ -23,17 +25,23 @@
 
 
     <script>
-        function validar(){
-            var país1 = document.querySelector('input#país')
-            var res = document.getElementById('res')
-            res.innerHTML = '<p> Você está morando em' + país1
-                if(país1 == 'Angola') {
+        function validar() {
+            var p1 = document.getElementById('valor1')
+            var resultado = document.getElementById('res')
+            var s = (p1.value)
+            resultado.innerHTML = `<p> Você está morando em ${s}</p> `
+
+            if (p1 == 'Angola') {
                 res.innerHTML += 'Você é Angolano'
+            } else {
+                res.innerHTML += 'Você é estrangeiro'
             }
-            res.innerHTML += 'Você é estrangeiro'
-           
+
+
+
         }
     </script>
 
 </body>
+
 </html>
