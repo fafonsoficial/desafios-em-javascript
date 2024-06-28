@@ -26,18 +26,15 @@
 
     <script>
         function validar() {
-            var p1 = document.getElementById('valor1')
+            var pais = document.getElementById('valor1')
             var res = document.getElementById('res')
-            var s = (p1.value)
+            var s = (pais.value)
             res.innerHTML = `<p> Você está morando em ${s}</p> `
-            if (p1 == 'Angola') {
-                res.innerHTML += 'Você é Estrangeiro'
-            } else {
+            if(pais == 'Angola') {
                 res.innerHTML += 'Você é Angolano'
+            } else {
+                res.innerHTML += 'Você é Estrangeiro'
             }
-
-
-
         }
     </script>
 
