@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinando JavaScript, HTML e CSS</title>
+    <style>
+        #res {
+            margin-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <h1>SISTEMA DE ÁNALISE DE GENERO</h1>
-    <P>Esse sistema consite em saber se os dados adicionados não para masculino ou femenino</P>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque commodi excepturi sapiente ipsam quisquam odio, recusandae possimus dignissimos totam molestiae ipsa odit reiciendis sint nisi in ratione, provident tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed perferendis ut error officiis repellendus. Molestias a minima tempore voluptatibus assumenda facilis voluptas voluptatem delectus dolor. Labore cum veniam repellat.</p>
+    <p>O sistema consite na ánalise do sexo que sera atribuido para a classificação do género.</p>
+
+    <p><strong>'M'</strong> será distinguido como Marculino, e <strong>'F'</strong> será distinguido como Femenino</p>
+
 
     Insira a inicial do seu sexo: <input type="text" name="sexo" id="sexo">
-    <input type="button" value="Analisar">
+    <input type="button" value="Analisar" onclick="analisar()" onmouseenter="enviar()" onmouseout="sair()">
     <div id="res">
-        <strong>Resultado da ánalise</strong>: 
+        <strong>Resultado da ánalise</strong>:
     </div>
 
     <script>
 
+        
+        function analisar() {
+            var genero = document.getElementById('sexo')
+            var res = document.getElementById('res')
+            var teste1 = (genero.value)
+
+            res.innerHTML = `A inicial que foi introduzida foi ${teste1}`
+        }
+
     </script>
 </body>
+
 </html>
