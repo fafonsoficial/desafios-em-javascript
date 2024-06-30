@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+    <style>
+        #res{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SISTEMA DE RECONHECIMENTO DE PORTAS DE CARROS</h1>
+
+    <p>Esse sistema análisar o número de portas que tem em um carro. Caso o carro tenha 5 portas o carro é de marca atual, caso tenha menos de 5 portas será considerado um carro de marca antiga. </p>
+
+    Insira o número de porta: <input type="number" name="portacarro" id="portacarro">
+
+    <input type="button" value="Classificar" onclick="comparar()">
+    <div id="res">
+        Resultado da Análise:
+    </div>
+
+    <script>
+        function comparar() {
+            var numporta = document.querySelector('input#portacarro')
+            var res = document.querySelector('div#res')
+            var numporta1 = Number(numporta.value)
+
+            res.innerHTML =`O seu carro tem ${numporta1} portas.`
+
+            if (numporta1 >= '5') {
+                res.innerHTML += ` O seu carro é da marca atual. ` 
+            } else {
+                res.innerHTML += `O seu carro é da marca antiga.`
+            }
+            
+            
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+    <style>
+        #res {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SISTEMA DE ÁNALISE DE GENERO</h1>
+
+    <p>O sistema consite na ánalise do sexo que sera atribuido para a classificação do género.</p>
+
+    <p><strong>'M'</strong> será distinguido como Marculino, e <strong>'F'</strong> será distinguido como Femenino</p>
+
+
+    Insira a inicial do seu sexo: <input type="text" name="sexo" id="sexo">
+    <input type="button" value="Analisar" id="text">
+    <div id="res">
+        <strong>Resultado da ánalise</strong>:
+    </div>
+
+    <script>
+        alert('Seja Muito Bem-vindo/a a nossa platafoma de analise de genero')
+
+        var nome = prompt('Insira o seu nome')
+        var idade = prompt('Insira a sua idade')
+        alert(`Vamos começar com a análise ${nome} a sua idade é ${idade}`)
+
+        var x = document.getElementById('text')
+        x.addEventListener('click', analisar)
+        x.addEventListener('mouseenter', enviar)
+        x.addEventListener('mouseout', sair)
+
+        function analisar() {
+            var genero = document.getElementById('sexo')
+            var res = document.getElementById('res')
+            var teste1 = (genero.value)
+            res.innerHTML = `A inicial que foi introduzida foi ${teste1}`
+
+            x.style.background = 'green'
+
+            if (teste1 == 'F') {
+                res.innerHTML += '<p> Sexo Femenino </p>'
+            } else {
+                res.innerHTML += '<p> Sexo Masculino </p>'
+            }
+        }
+
+        function enviar() {
+            x.style.background = 'Red'
+        }
+
+        function sair() {
+            x.style.background = 'Blue'
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de Multiplicação e Divisão</h1>
+    <p>Essa calculadora destina-se somente na efetuação de calculos matemáticos em multiplicação</p>
+
+    <input type="number" name="valor1" id="valor1"> * 
+    <input type="number" name="valor2" id="valor2"> * 
+    <input type="number" name="valor3" id="valor3"> * 
+    <input type="number" name="valor4" id="valor4">
+    <input type="button" value="multiplicar" onclick="resolver()">
+    <div class="res">
+        Resultado Final:
+    </div>
+
+    <script>
+        function resolver() {
+            var nota1 = document.querySelector('input#valor1')
+            var nota2 = document.querySelector('input#valor2')
+            var nota3 = document.querySelector('input#valor3')
+            var nota4 = document.querySelector('input#valor4')
+            var res = document.querySelector('div.res')
+
+            let p1 = Number(nota1.value)
+            let p2 = Number(nota2.value)
+            let p3 = Number(nota3.value)
+            let p4 = Number(nota4.value)
+
+            var s = p1 * p2 * p3 * p4
+
+            res.innerHTML = `A multiplicação entre ${p1}, ${p2}, ${p3} e ${p4} dá o total de ${s}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+    <style>
+        #res {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SISTEMA DE CONTROLO DA EMIGRAÇÃO PORTUGUÊSA</h1>
+
+    Insira o seu país de origem: <input type="text" name="país" id="valor1">
+
+    <input type="button" value="Verificar" onclick="validar()">
+
+    <div id="res">
+        <strong>Resultado da verificação de origem:</strong>
+    </div>
+
+
+    <script>
+        function validar() {
+            var pais = document.getElementById('valor1')
+            var res = document.getElementById('res')
+            var s = (pais.value)
+
+            res.innerHTML = `<p> Você está morando em ${s}</p> `
+            
+            if(pais === 'Angola') {
+                res.innerHTML += 'Você é Angolano'
+            } else {
+                res.innerHTML += 'Você é Estrangeiro'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

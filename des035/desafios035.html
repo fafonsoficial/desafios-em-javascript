@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 700;
+        }
+
+        #res {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SISTEMA DE CONTRO DE CONVIDADOS PARA O MEU CASAMENTO</h1>
+
+    <h3>Enunciado:</h3>
+    <p>Para este projeto o foco é ter um limite máximo de convidados para uma festa de casamento, caso passe do número
+        definido de convidados o sistema deve apresentar alguma informação de que 'Excedeu o limite de convidados
+        definido.'</p>
+
+    Insira o número de convites dispóniveis <input type="number" name="numconvite" id="numconvite">
+    <input type="button" value="Inserir" onclick="calcular()">
+    <div id="res">
+        <strong>Resultado da inserção de convidados:</strong>
+    </div>
+
+    <script>
+        function calcular() {
+            let convite = document.querySelector('input#numconvite')
+            let res = document.getElementById('res')
+            let convite1 = Number(convite.value)
+
+            res.innerHTML = 'Você inseriu ' + convite1 + ' convites dispóniveis, e isso serve apenas para esse número de pessoas.'
+
+            if (convite1 <= '10') {
+                res.innerHTML += '<p>Ciclo de convidados completo!</p>'
+            } else {
+                res.innerHTML += '<p>Está inserindo um numero elevado de convidados.</p>'
+            } 
+        }
+    </script>
+
+</body>
+
+</html>

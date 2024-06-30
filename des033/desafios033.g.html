@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript, HTML e CSS</title>
+    <style>
+        #res {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SISTEMA DE CALCULO DE MÉDIA DE AVALIAÇÃO</h1>
+    <p>Para poder ser considerado <strong>'Aprovado'</strong> deverá ter uma nota minima de <strong>7.5</strong>
+        valores. Caso contrário estará <strong>'Reprovado'</strong></p>
+
+    Insira a primera nota <input type="number" name="" id="valor1">
+    Insira a segunda nota <input type="number" name="" id="valor2">
+    <input type="button" value="Resultado" onclick="calcular()">
+    <div id="res">
+        <strong>Resultado Final:</strong>
+    </div>
+
+
+    <script>
+        function calcular() {
+            var nota1 = document.querySelector('input#valor1')
+            var nota2 = document.querySelector('input#valor2')
+            var res = document.getElementById('res')
+
+            var n1 = Number(nota1.value)
+            var n2 = Number(nota2.value)
+            
+            
+            var s = (n1 + n2) / 2
+            s.toFixed(2)
+
+            res.innerHTML = `Na primeira prova obteve ${n1} e na segunda prova obteve ${n2} e como resultado final obteve ${s}`
+
+            if (s >= 7.5) {
+                res.innerHTML = '<p>Você está aprovado</p>'
+            } else {
+                res.innerHTML = '<p>Você está reprovado</p>'
+            }
+        }
+
+       
+           
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -10,7 +10,8 @@
 <body>
     <h1>CALCULADOREA DE MÉDIA DE ALUNO</h1>
     <p>
-        Esse aplicativo consite em saber se o estudante está aprovado ou reprovado. Caso o aluno tiver uma média supeior ou igual a 7.5 estará aprovado, caso não tenha estará reprovado. Para isso temos que tem as seguintes
+        Esse aplicativo consite em saber se o estudante está aprovado ou reprovado. Caso o aluno tiver uma média supeior
+        ou igual a 7.5 estará aprovado, caso não tenha estará reprovado. Para isso temos que tem as seguintes
         notas:
     </p>
     <ul>
@@ -22,22 +23,22 @@
         Essas mesmas notas serão <strong>adicionadas</strong> e <strong>divididas</strong>. So assim obteremos o
         resultado final
     </p>
-    
-    <input type="number" name="primeira" id="primeira"> + 
-    <input type="number" name="segunda" id="segunda"> +
-    <input type="number" name="terceira" id="terceira">
+
+    <input type="number" name="valor1" id="valor1"> +
+    <input type="number" name="valor2" id="valor2"> +
+    <input type="number" name="valor3" id="valor3">
     <input type="button" value="Somar" onclick="somar()">
-    
+
     <div id="res">
         <br> <strong>Saida do resultado final</strong>:
     </div>
 
     <script>
         function somar() {
-            var nota1 = document.getElementById('primeiro')
-            var nota2 = document.getElementById('segundo')
-            var nota3 = document.getElementById('terceiro')
-            var saida = document.getElementById('saida')
+            var nota1 = document.getElementById('valor1')
+            var nota2 = document.getElementById('valor2')
+            var nota3 = document.getElementById('valor3')
+            var res = document.getElementById('res')
             var n1 = Number(nota1.value)
             var n2 = Number(nota2.value)
             var n3 = Number(nota3.value)
@@ -45,8 +46,8 @@
             var soma = n1 + n2 + n3
             var soma2 = soma / 3
             soma2.toFixed(2)
-            
-            res.innerHTML = ` O resultado final das somas das três notas é igual a ${soma} `
+
+            res.innerHTML = ` <br>  A soma entre ${n1}, ${n2} e ${n3} é igual a ${soma} Pontos obtido durante as provas. E dividindo esse valor por três, teremos como média final ${soma2} `
         }
 
     </script>
