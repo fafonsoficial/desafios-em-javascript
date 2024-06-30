@@ -21,7 +21,7 @@
 
 
     Insira a inicial do seu sexo: <input type="text" name="sexo" id="sexo">
-    <input type="button" value="Analisar" onclick="analisar()" onmouseenter="enviar()" onmouseout="sair()" >
+    <input type="button" value="Analisar" id="text">
     <div id="res">
         <strong>Resultado da ánalise</strong>:
     </div>
@@ -33,12 +33,18 @@
         var idade = prompt('Insira a sua idade')
         alert(`Vamos começar com a análise ${nome} a sua idade é ${idade}`)
 
+        var x = document.getElementById('text')
+        x.addEventListener('click', analisar)
+        x.addEventListener('mouseenter', enviar)
+        x.addEventListener('mouseout', sair)
 
         function analisar() {
             var genero = document.getElementById('sexo')
             var res = document.getElementById('res')
             var teste1 = (genero.value)
             res.innerHTML = `A inicial que foi introduzida foi ${teste1}`
+
+            x.style.background = 'green'
 
             if (teste1 == 'F') {
                 res.innerHTML += '<p> Sexo Femenino </p>'
@@ -48,11 +54,11 @@
         }
 
         function enviar() {
-            res.addEventListener()
+            x.style.background = 'Red'
         }
 
         function sair() {
-
+            x.style.background = 'Blue'
         }
     </script>
 </body>
