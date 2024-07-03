@@ -10,20 +10,19 @@
 
     <script>
         var btn = document.querySelector('input#text1')
-        btn.addEventListener('Click', Clicar)
+        btn.addEventListener('click', Clicar)
         btn.addEventListener('DoubleClick', DoisCliques)
         btn.addEventListener('mouseenter', Entrar)
         btn.addEventListener('mouseouver' Passar)
         btn.addEventListener('mouseout', Sair)
-        btn.addEventListener('keyDown' ClicarTecla)
-        btn.addEventListener('keyup'SoltarTecla)
+
 
         function Clicar() {
-
+            btn.innerHTML = 'Enviado!'
         }
 
         function DoisCliques() {
-
+            
         }
 
         function Entrar() {
@@ -38,13 +37,6 @@
 
         }
 
-        function ClicarTecla() {
-
-        }
-
-        function SoltarTecla() {
-
-        }
     </script>
 </body>
 </html>
