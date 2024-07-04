@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    padding-top: 160px;
+}
+
+h3 span {
+    color: #ffc700;
+}
+
+
+h1 {
+    color: #ffc700;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+   
+}
+
+p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 72px;
+}
+
+a {
+    padding: 12px 32px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+a:hover,
+.btn-primary {
+    text-decoration: none;
+    color: black;
+    background-color: #ffc700;
+}
