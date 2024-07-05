@@ -1,0 +1,41 @@
+function verificar() {
+    let data = new Date()
+    let ano = data.getFullYear()
+    let fano = document.getElementById('txtano')
+    let res =  document.getElementById('res')
+    if(fano.value.length == 0 || Number(fano.value) > ano ){
+        alert('[ERRO] Verifique os dados e tente novamente')
+    } else {
+        let fsex = document.getElementsByName('radsex')
+        let idade = ano - Number(fano.value)
+        let gênero = ''
+        let img = document.createElement('img')
+        img.setAttribute('id', 'foto')
+        if (fsex[0].checked) {
+            gênero = 'Homem'
+            if(idade >= 0 && idade < 10) {
+                //CRIANÇA
+            } else if(idade >= 10 && idade < 21) {
+                // JOVEM
+            } else if(idade < 50) {
+                //Adulto
+            } else {
+                //IDOSO
+            }
+        } else if (fsex[1].checked) {
+            gênero = 'Minlher'
+            gênero = 'Homem'
+            if(idade >= 0 && idade < 10) {
+                //CRIANÇA
+            } else if(idade >= 10 && idade < 21) {
+                // JOVEM
+            } else if(idade < 50) {
+                //Adulto
+            } else {
+                //IDOSO
+            }
+        }
+        res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
+    }
+
+}
