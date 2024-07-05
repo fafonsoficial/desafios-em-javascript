@@ -3,13 +3,18 @@ function calcular() {
     var n2 = document.getElementById('valor2')
     var res = document.getElementById('res')
 
-    var soma = (n1 + n2)/2
-    var soma1 = Number(soma.value)
+    var soma1 = Number(n1.value)
+    var soma2 = Number(n2.value)
+
+    var somatal = (soma1 + soma2)/2
     
-    res.innerHTML = `<p> Obteve como nota final ${soma1} valores. </p>`
-    if(soma1 >= 7.5) {
-       console.log(`APROVADO`)
-    } else if( soma1 < 7 ) {
-        console.log(`REPROVADO`)
-    } 
+    res.innerHTML = `<p>Obteve como resultado final ${somatal} valores.</p>`
+
+    if (somatal > 7.5) {
+        console.log('<p>APROVADO</p>')
+    } else if ( somatal < 7) {
+        console.log('<p>REPROVADO</p>')
+    } else{
+        console.log('<p>RECURSO</p>')
+    }
 }
