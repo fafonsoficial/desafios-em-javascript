@@ -9,12 +9,4 @@ function calcular() {
     var somatal = (soma1 + soma2)/2
     
     res.innerHTML = `<p>Obteve como resultado final ${somatal} valores.</p>`
-
-    if (somatal > 7.5) {
-        console.log('<p>APROVADO</p>')
-    } else if ( somatal < 7) {
-        console.log('<p>REPROVADO</p>')
-    } else{
-        console.log('<p>RECURSO</p>')
-    }
 }
