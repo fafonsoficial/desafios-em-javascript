@@ -6,7 +6,7 @@
     <title>Treinando JavaScript, HTML e CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="">
+<body onload="verificar()">
     <header>
         <h1>
             MATRICULA DE ESTUDANTES
@@ -16,21 +16,21 @@
     <section>
         <div>
             <p>Nome de Estudante:
-                <input type="text" name="" id="">
+                <input type="text" name="txtnome" id="txtnome">
             </p>
 
             <p> Ano Nascimento:
-                <input type="number" name="" id="">
+                <input type="number" name="nasc" id="nasc">
             </p>
 
             <p>Valor da média: 
-                <input type="number" name="" id="">
+                <input type="number" name="nota" id="nota">
             </p>
             
             <p> Sexo:
-                <input type="radio" name="" id="" checked>
+                <input type="radio" name="radsex" id="mas" checked>
                 <label for=""></label>
-                <input type="radio" name="" id="">
+                <input type="radio" name="radsexid="fem">
                 <label for=""></label>
                 <p>
                     <input type="button" value="">
@@ -38,7 +38,7 @@
             </p>
         </div>
         
-        <div>
+        <div id="res">
             <strong>Resultado de candidatura...</strong>
         </div>
 
