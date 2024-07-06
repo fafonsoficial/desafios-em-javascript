@@ -1,6 +1,6 @@
 # Meus Primeiros Passos Em JavaScript
 
-**Neste repositório constam os meus exercicios em JavaScript**
+**Neste repositório constam os meus exercicios em JavaScript desde os exercicios básicos ao mais avançado.**
 
 **Recursos:**
 
