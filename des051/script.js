@@ -6,10 +6,11 @@ function verificar() {
     var médiatotal = (média.value)
     var nome = (pessoa.value)
 
-    if (médiatotal >= 7.5) {
-        alert('[ERRO], Insera os seus dados novamente')
-    } else {
+    if (médiatotal == 0) {
+        alert('[ERRO], Verifique o valor da média que inseriu!')
+    } else if (médiatotal > 7.5) {
         res.innerHTML = `${nome}, a sua candidatudo será processada!`
+    } else {
         res.innerHTML = `${nome},a sua candidatura não poderá ser processada por ter uma média inferior a 7.5`
     }
 }
