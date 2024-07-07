@@ -21,17 +21,18 @@
                 <input type="text" name="nome" id="nome">
             </p>
             <p> Nasci:
-                <input type="number" name="nasc" id="nasc">
+                <input type="number" name="nasc" id="nasc" min="0">
             </p>
             <p>Média:
                 <input type="number" name="média" id="média">
             </p>
-            <p> Sexo:
+            <p id="parag"> Sexo:
                 <input type="radio" name="radsex" id="mas" checked>
                 <label for="mas">Masculino</label>
                 <input type="radio" name="radsex" id="fem">
                 <label for="fem">Femenino</label>
-                <p>
+
+                <p id="parag">
                   <input type="button" value="Cadastrar" onclick="verificar()">  
                 </p>
                 

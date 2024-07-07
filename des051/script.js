@@ -11,9 +11,19 @@ function verificar() {
     var nome = (pessoa.value)
 
     if (fano.value == 0 || fano.value > ano ) {
-        alert('[ERRO], Verifique o valor da média que inseriu!')
+        alert('[ERRO], Verfique os dados e tente novamente')
     } else {
         var sexo = document.getElementsByName('radsex')
+        var idade = ano - Number(fano.value)
+        var genero = ''
+        if (sexo[0].checked) {
+            genero = 'Homem'
+            if (idade >= 15 && idade < 14) {
+                
+            }
+        }
+
+
     } else if (médiatotal > 7.5) {
         res.innerHTML = `${nome}, a sua candidatudo será processada!`
     } else {
