@@ -10,7 +10,7 @@ function verificar() {
     var médiatotal = (média.value)
     var nome = (pessoa.value)
 
-    if (fano.value == 0 || fano.value > ano ) {
+    if (fano.value == 0 || fano.value > ano) {
         alert('[ERRO], Verfique os dados e tente novamente')
     } else {
         var sexo = document.getElementsByName('radsex')
@@ -18,16 +18,22 @@ function verificar() {
         var genero = ''
         if (sexo[0].checked) {
             genero = 'Homem'
-            if (idade >= 15 && idade < 14) {
-                
+            if (idade >= 15) {
+                res.innerHTML = 'Idade Aceite'
+            } else {
+                res.innerHTML = 'Idade Recusada'
             }
+        } else if (sexo[1].checked) {
+            genero = 'Mulher'
+            if (idade >= 15) {
+                res.innerHTML = 'Idade Aceite'
+            } else {
+                res.innerHTML = 'Idade Recusada'
+            }
+        } else if (médiatotal > 7.5) {
+            res.innerHTML = `${nome}, a sua candidatudo será processada!`
+        } else {
+            res.innerHTML = `${nome},a sua candidatura não poderá ser processada por ter uma média inferior a 7.5`
         }
-
-
-    } else if (médiatotal > 7.5) {
-        res.innerHTML = `${nome}, a sua candidatudo será processada!`
-    } else {
-        res.innerHTML = `${nome},a sua candidatura não poderá ser processada por ter uma média inferior a 7.5`
     }
-}
-médiatotal == 0
+    médiatotal == 0
