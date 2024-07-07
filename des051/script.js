@@ -1,19 +1,14 @@
 function verificar() {
-    var nome = document.getElementById('nome')
-    var nota = docuemnt.getElementById('média')
+    var pessoa = document.getElementById('nome')
+    var ano = document.getElementById('nasci')
+    var res = document.getElementById('res')
+    var média = document.getElementById('média')
+    var médiatotal = (média.value)
+    var nome = (pessoa.value)
 
-    var nome1 = (nome.value)
-    var valor = (nota.value)
-    
-    var fano = document.querySelector('input#nasc')
-    var res = document.querySelector('div#res')
-
-    // var data = new Date()
-    // var ano = data.getFullYear()
-
-    if(valor > 10) {
-        res.innerHTML = `Aluno Cadastrado`
+    if (médiatotal >= 7.5 && médiatotal < 7) {
+        res.innerHTML = `${nome}, a sua candidatudo será processada!`
+    } else {
+        res.innerHTML = `${nome},a sua candidatura não poderá ser processada por ter uma média inferior a 7.5`
     }
-
-    
 }
