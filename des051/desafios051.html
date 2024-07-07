@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="verificar()">
+<body>
     <header>
         <h1>
             MATRICULA DE ESTUDANTES
@@ -17,26 +17,24 @@
 
     <section>
         <div>
-            <p> Nome de Estudante:
-                <input type="text" name="txtnome" id="txtnome">
+            <p> Nome:
+                <input type="text" name="nome" id="nome">
             </p>
-
-            <p> Ano Nascimento:
-                <input type="number" name="nasc" id="nasc">
+            <p> Nasci:
+                <input type="number" name="nasc" id="nasc" min="0">
             </p>
-
-            <p>Valor da média:
+            <p>Média:
                 <input type="number" name="nota" id="nota">
             </p>
-
             <p> Sexo:
                 <input type="radio" name="radsex" id="mas" checked>
                 <label for="mas">Masculino</label>
                 <input type="radio" name="radsex" id="fem">
                 <label for="fem">Femenino</label>
-            <p>
-                <input type="button" value="Cadastrar">
-            </p>
+                <p>
+                  <input type="button" value="Cadastrar" onclick="verificar()">  
+                </p>
+                
             </p>
         </div>
 
