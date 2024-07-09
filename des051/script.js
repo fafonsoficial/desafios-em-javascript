@@ -21,27 +21,28 @@ function verificar() {
         confirm('Vamos continuar com a sua candidatura?')
     } else {
         var sex = document.getElementsByName('radsex')
-        var idade = ano - dataValue
+        var idade = ano - Number(dataValue)
         var gênero = ''
         if (sex[0].Checked) {
             gênero = 'Homem'
             if (idade >= 0 && idade < 10) {
-                console.log('')
+                res.innerHTML += ('Prociga com a candiatura')
             } else {
-                console.log('')
+                res.innerHTML += ('Não Pode Dar Continuidade da Sua Candidatura')
             }
         
         } else if(sex[1].Checked) {
             gênero = 'Mulher'
             if (idade >= 0 && idade < 10) {
-                console.log('')
+                res.innerHTML += ('Prociga com a candiatura')
             } else {
-                console.log('')
+                res.innerHTML += ('Não Pode Dar Continuidade da Sua Candidatura')
             }
         }
 
     }
-}
+    res.innerHTML = 'Nome ' + nomeValue1 + ' ' + nomeValue2 + ', data de matricula ' + dataValue + ' valor da média ' + médiaValue + ' e estás com ' + idade + ' de idade.'
 
-//res.innerHTML = 'Nome ' + nomeValue1 + ' ' + nomeValue2 + ', data de matricula ' + dataValue + ' valor da média ' + médiaValue
+
+}
 
