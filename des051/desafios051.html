@@ -17,25 +17,28 @@
 
     <section>
         <div>
-            <p> Nome:
-                <input type="text" name="nome" id="nome">
-            </p>
-            <p> Nasci:
-                <input type="number" name="nasc" id="nasc" min="0">
-            </p>
-            <p>Média:
-                <input type="number" name="média" id="média">
-            </p>
-            <p id="parag"> Sexo:
+            <p>Nome: </p>
+            <input type="text" name="primnome" id="primnome">
+
+            <p>Sobrenome: </p>
+            <input type="text" name="sobnome" id="sobnome">
+
+            <p> Data Nascimento: </p>
+            <input type="date" name="datanascimento" id="datanascimento">
+
+            <p>Média: </p>
+            <input type="number" name="média" id="média">
+
+            <p > Sexo:
                 <input type="radio" name="radsex" id="mas" checked>
                 <label for="mas">Masculino</label>
                 <input type="radio" name="radsex" id="fem">
                 <label for="fem">Femenino</label>
 
-                <p id="parag">
-                  <input type="button" value="Cadastrar" onclick="verificar()">  
-                </p>
-                
+            <p id="parag">
+                <input type="button" value="Cadastrar" onclick="verificar()">
+            </p>
+
             </p>
         </div>
 
