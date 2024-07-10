@@ -1,5 +1,7 @@
 function verificar() {
 
+    var res = document.getElementById('res')
+
     var identidade_a = document.getElementById('primnome')
     var identidade_b = document.getElementById('sobrenome')
 
@@ -8,41 +10,21 @@ function verificar() {
 
     var dataElement = document.getElementById('datanascimento')
     var dataValue = dataElement.value
-    var data = new Date(dataValue)
+    var data = new Date()
     var ano = data.getFullYear()
+    var anoElement = ano - Number(dataValue)
 
     var médiaElement = document.getElementById('média')
     var médiaValue = médiaElement.value
 
-    var res = document.getElementById('res')
-
-    if (médiaValue == 0 || médiaValue > 7 && médiaValue < 7.5) {
-        alert('[ERRO] Verifique os dados e tente novamente!')
-        confirm('Vamos continuar com a sua candidatura?')
+    if (médiaValue >= 7.5) {
+        console.log('<p>APROVADO</p>')
     } else {
-        var sex = document.getElementsByName('radsex')
-        var idade = ano - Number(dataValue)
-        var gênero = ''
-        if (sex[0].Checked) {
-            gênero = 'Homem'
-            if (idade >= 0 && idade < 10) {
-                res.innerHTML += ('Prociga com a candiatura')
-            } else {
-                res.innerHTML += ('Não Pode Dar Continuidade da Sua Candidatura')
-            }
-        
-        } else if(sex[1].Checked) {
-            gênero = 'Mulher'
-            if (idade >= 0 && idade < 10) {
-                res.innerHTML += ('Prociga com a candiatura')
-            } else {
-                res.innerHTML += ('Não Pode Dar Continuidade da Sua Candidatura')
-            }
-        }
-
+       console.log('<p>REPROVADO</p>')
     }
-    res.innerHTML = 'Nome ' + nomeValue1 + ' ' + nomeValue2 + ', data de matricula ' + dataValue + ' valor da média ' + médiaValue + ' e estás com ' + idade + ' de idade.'
 
+    res.innerHTML = `${nomeValue1} ${nomeValue2}, de ${anoElement} anos de idade teve como média ${médiaValue}`
 
 }
 
+//médiaValue < 7.5
