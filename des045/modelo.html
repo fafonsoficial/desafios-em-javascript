@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros Passos De Exercicio de JavaScript,  HTML e CSS</title>
+    <title>Primeiros Passos De Exercicio de JavaScript, HTML e CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Tabuada</h1>
     </header>
 
     <section>
         <div>
-            
+            <p>Número:
+                <input type="number" name="txtnum" id="txtnum">
+                <input type="button" value="Gerar Tabuada" onclick="gerar()">
+            </p>
         </div>
         <div>
-            
+            <select name="seltab" id="seltab" size="10">
+                <option>Digite um número a cima!</option>
+            </select>
         </div>
     </section>
 
@@ -26,4 +33,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
