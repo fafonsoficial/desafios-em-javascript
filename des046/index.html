@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCasamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Convite de casamento
+        </h1>
+    </header>
+
+    <section>
+        <p>
+           Agaracemos por ter chegado até aqui, para damos continuidade do nosso processo de convite informa-nos o seu nome, e precisamos que nos confirmes a sua presença usando a letra <strong>S</strong> (Sim) ou <strong>N</strong> (Não)
+        </p>
+        <div>
+            <p>
+                <strong>Nome de convidado</strong>:
+                <input type="text" name="txtnam" id="txtnam">
+            </p>
+
+            <p>
+                <strong>Confirmar presença</strong>:
+                <input type="text" name="txtpre" id="txtpre">
+            </p>
+
+            <p>
+                <input type="button" value="Convidar" onclick="convidar()">
+            </p>
+
+        </div>
+
+        <div id="res">
+            Resposta da pesquisa...
+        </div>
+        <script src="script.js"></script>
+    </section>
+</body>
+
+</html>
