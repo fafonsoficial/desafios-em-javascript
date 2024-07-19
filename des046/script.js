@@ -13,14 +13,9 @@ function consultar() {
         res.innerHTML = `Número de convidados aceites! E o convidado principal chame-se ${nome}`
         document.body.style.background = 'green'
     } else {
+        alert('Verifique o número de convidados digitados!')
         res.innerHTML = 'Número de convidados recusados!'
         document.body.style.background = 'red'
     }
 
 }
-
-/*
-for (var numValue = 1; numValue <= 5; numValue++) {
-            res.innerHTML =+ `O ${numValue} é o ${nome}`
-        }
-*/
