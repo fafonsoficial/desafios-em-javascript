@@ -17,31 +17,22 @@
 
     <section>
         <p>
-            Agaracemos por ter chegado até aqui, para damos continuidade do nosso processo de convite informa-nos o seu
-            nome, e precisamos que nos confirmes a sua presença usando a letra <strong>S</strong> (Sim) ou
-            <strong>N</strong> (Não)
+           Indique o número de convidados que foram cadastrados no seu convite físico. 
         </p>
         <div>
             <p>
-                <strong>Nome de convidado</strong>:
-                <input type="text" name="txtnam" id="txtnam">
-            </p>
-
-            <p><strong>Confirmar presença:</strong>
-                <input type="radio" name="radconfirm" id="sim" checked>
-                <label for="sim"><strong>Estarei</strong></label>
-                <input type="radio" name="radconfirm" id="nao">
-                <label for="nao"><strong> Não Estarei</strong></label>
+                <strong>Número de convidados</strong>:
+                <input type="number" name="txtnum" id="txtnum">
             </p>
 
             <p>
-                <input type="button" value="Convidar" onclick="convidar()">
+                <input type="button" value="Consultar" onclick="consultar()">
             </p>
 
         </div>
 
         <div id="res">
-            Resposta da pesquisa...
+            Aprocessar a sua pesquisa...
         </div>
         <script src="script.js"></script>
     </section>
