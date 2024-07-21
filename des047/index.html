@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
     <header>
         <nav id="navbar">
-            <i class="fa-solid fa-burger" id="nav_logo">Food</i>
+            <i class="fa-solid fa-burger" id="nav_logo"> Food</i>
 
             <ul id="nav_list">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="#home">Inicio</a>
                 </li>
                 <li class="nav-item">
@@ -54,6 +60,55 @@
             </button>
         </div>
     </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O sabor vai até <span>você</span>
+                </h1>
+
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsam, laudantium assumenda, non esse
+                    ea et omnis a accusantium.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver cardápio
+                    </a>
+                    <a href="tel:+935880558" id="phone_buttons">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone">
+                                (+351) 935 880 554
+                            </i>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/hero.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <script src="src/javascript/script.js"></script>
 </body>
 
 </html>
