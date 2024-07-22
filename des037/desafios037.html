@@ -13,7 +13,7 @@
         btn.addEventListener('click', Clicar)
         btn.addEventListener('DoubleClick', DoisCliques)
         btn.addEventListener('mouseenter', Entrar)
-        btn.addEventListener('mouseouver' Passar)
+        /*btn.addEventListener('mouseouver' Passar)*/
         btn.addEventListener('mouseout', Sair)
 
 
@@ -22,19 +22,20 @@
         }
 
         function DoisCliques() {
-
+            btn.innerHTML = "Clicou Duas Vezes!"
+            
         }
 
         function Entrar() {
-
+            btn.innerHTML = "Entrou!"
         }
 
-        function Passar() {
+        /*function Passar() {
  
-        }
+        }*/
 
         function Sair() {
-
+            btn.innerHTML = "Saiu!"
         }
 
     </script>
