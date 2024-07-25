@@ -9,25 +9,25 @@
     <input type="button" value="Enviar" id="text1">
 
     <script>
-        var btn = document.querySelector('input#text1')
-        btn.addEventListener('click', Clicar)
-        btn.addEventListener('DoubleClick', DoisCliques)
-        btn.addEventListener('mouseenter', Entrar)
+        var botão = document.querySelector('input#text1')
+        botão.addEventListener('click', Clicar)
+        botão.addEventListener('DoubleClick', DoisCliques)
+        botão.addEventListener('mouseenter', Entrar)
         /*btn.addEventListener('mouseouver' Passar)*/
-        btn.addEventListener('mouseout', Sair)
+        botão.addEventListener('mouseout', Sair)
 
 
         function Clicar() {
-            btn.innerHTML = 'Enviado!'
+            botão.innerHTML = 'Enviado!'
         }
 
         function DoisCliques() {
-            btn.innerHTML = "Clicou Duas Vezes!"
+            botão.innerHTML = "Clicou Duas Vezes!"
             
         }
 
         function Entrar() {
-            btn.innerHTML = "Entrou!"
+            botão.innerHTML = "Entrou!"
         }
 
         /*function Passar() {
@@ -35,7 +35,7 @@
         }*/
 
         function Sair() {
-            btn.innerHTML = "Saiu!"
+            botão.innerHTML = "Saiu!"
         }
 
     </script>
