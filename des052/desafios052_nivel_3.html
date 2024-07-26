@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 3 de desafio</title>
+</head>
+<body>
+    
+
+    <script>
+        var primeiraAvaliação = Number(prompt('Digite o valor da primeira avaliação: '))
+        var segundaAvaliação = Number(prompt('Digite o valor da segunda avaliação: '))
+
+        var resultado = (primeiraAvaliação + segundaAvaliação) / 2
+        resultado.toFixed(2)
+       var resFinal = resultado >= 7.5? "Aprovado" : "Reprovado"
+
+        alert(`O resultado final é ${resultado} e você está ${resFinal}`)
+        
+    </script>
+</body>
+</html>
