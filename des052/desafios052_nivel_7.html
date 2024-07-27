@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        * {
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(93, 27, 154);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #btn {
+            width: 150px;
+            height: 100px;
+            background-color: rgb(127, 127, 127);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inicio dos estudos dos eventos DOM</h1>
+    <p>Vamos aprender a fazer a manupulação de dados em eventos DOM</p>
+    <div id="btn">
+        Clique em mim
+    </div>
+
+    <script>
+        var btn = document.getElementById('btn')
+        btn.addEventListener('click', clicar)
+        btn.addEventListener('mouseenter', entrar)
+        btn.addEventListener('mouseout', sair)
+        btn.addEventListener('doubleclick', duasvezes)
+
+        function clicar() {
+            btn.innerHTML = 'Clicou!'
+            btn.style.background = 'Red'
+        }
+
+        function entrar() {
+            btn.innerHTML = 'Entrou'
+            btn.style.background = 'green'
+        }
+
+        function sair() {
+            btn.innerHTML = 'Saiu!'
+            btn.style.background = 'yellow'
+        }
+
+        function duasvezes() {
+            btn.innerHTML = 'clicou duas vezes'
+            btn.style.background = '#ff09f5'
+        }
+    </script>
+</body>
+
+</html>
